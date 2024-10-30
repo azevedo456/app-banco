@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tela de Início - Nubank</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nubank</h1>
+        </header>
+        <main id="main-content">
+            <h2>Bem-vindo ao Nubank</h2>
+            <p>Seu banco digital, sem taxas e com praticidade.</p>
+            <button id="loginBtn">Fazer Login</button>
+        </main>
+        <div id="cadastro" class="hidden">
+            <h2>Cadastro</h2>
+            <form id="cadastroForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+            <button id="backBtn">Voltar</button>
+        </div>
+        <div id="conta" class="hidden">
+            <h2>Conta</h2>
+            <div>
+                <button id="toggleSaldoBtn">Mostrar Saldo</button>
+            </div>
+            <p id="saldo" class="hidden">Saldo: R$ 0,00</p>
+            <div class="button-container">
+                <button class="circle-button" id="pixBtn">Pix</button>
+                <button class="circle-button" id="transferenciaBtn">Transferência</button>
+                <button class="circle-button" id="pagamentoBtn">Pagamento</button>
+                <button class="circle-button" id="extratoBtn">Extrato</button>
+                <button class="circle-button" id="configuracoesBtn">Configurações</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
